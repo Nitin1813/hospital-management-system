@@ -1,0 +1,12 @@
+.buttons{
+    background-color: white;
+    border: black;
+}
+.buttons button{
+    background-color: white;
+    color: red;
+    border: 1px solid black;
+   margin: 20px 19px 20px 9px;
+   padding: 10px 10px 10px 10px;
+   box-shadow: yellow;
+}

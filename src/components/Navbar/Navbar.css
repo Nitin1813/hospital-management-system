@@ -1,0 +1,76 @@
+#nav-dropdown{
+    color: white;
+}
+.logo{
+
+    height: 60px;
+    width: 60px;
+    border: 2px solid skyblue;
+    border-radius: 90px;
+    margin: -3px 41px -7px -1px;
+}
+.nav-link {
+    color: white;
+    text-align: center;
+    padding: 5px 14px;
+
+  margin-right: 25px;
+  margin-left: 10px;
+    font-size: 20px;
+
+}
+
+.nav-link:hover{
+    color: rgb(44, 183, 238);
+}
+.nav-dropdown{
+    padding:0;
+    margin:0;
+   
+}
+
+.navbar {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    
+
+    
+
+}
+
+
+
+
+
+
+/* .Nav{
+   background-color: lightgreen;
+   border-radius: 30px;
+ 
+}
+.Nav link{
+    
+    list-style: none;
+    margin: 13px 20px;
+}
+.Nav ul{
+    overflow: auto;
+} */
+
+
+
+.light-green darken-1{
+    color:#7cb342 ;
+    
+}
+
+
+  
+  
+  .navbar--hidden {
+    top: -50px;
+    
+  }
