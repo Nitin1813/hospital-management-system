@@ -1,5 +1,5 @@
 // import React, { Component } from 'react'
-import "./Home.css"
+import "./Template.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import React, { useState } from 'react';
@@ -19,7 +19,7 @@ import  Gallerycarouse from '../Gallerycarousel';
 
 
 
-function Home() {
+function Template() {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
@@ -32,32 +32,17 @@ function appoint () {
   return (
     <div>
   
-    
-            <div>
-              
-        
-            
+  <Navbar/>
           
-           <div className="Top">
-            
-                <h1 className="font-weight-bold text-danger">SecureLife Hospital </h1>
-                <h5> FEEL THE DIFFERENCE WITH US </h5>
-                <h1>Your Health  Is Our Priority</h1>
-                <Button variant="danger"  onClick ={appoint} >Get Appointment</Button>{' '}
-                <Button variant="outline-danger">Learn More</Button>{' '}
-                
-                </div>
-                </div>
             
      <div>
-                <Btn></Btn>
-                <Mission/>
-                {/* <Appointment></Appointment> */}
+             
               
       <div>
-                <HomeQuote/>
+               
                 
-            
+               
+              <Footer></Footer>
               </div>
               </div>      
          
@@ -70,5 +55,5 @@ function appoint () {
   }
 
 
-export default Home;
+export default Template;
 

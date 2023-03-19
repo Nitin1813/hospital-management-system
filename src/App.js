@@ -45,6 +45,7 @@ import AdminGallery from './components/Admin/AdminGallery';
 import Contact from './components/Contact/Contact'
 import PatientReg from './components/PatientReg/PatientReg';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Template from './components/Template/Template'
 
 
 
@@ -52,46 +53,50 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
     return (
       <div className="App">
-      <Router>
+        <Template >
+
+        <Router>
      
-       <Route exact path="/" component={Home} />
-       <Route exact path="/about" component={About } />
-       <Route exact path="/gallery" component={Gallery} />
-     <Route exact path="/patient/login" component={PatientLogin} />
+     <Route exact path="/" component={Home} />
+     <Route exact path="/about" component={About } />
+     <Route exact path="/gallery" component={Gallery} />
+   <Route exact path="/patient/login" component={PatientLogin} />
 
-     <Route exact path="/patient/login/patient_home" component = {PatientHome} />
-      <Route exact path="/patient/login/home" component = {PatHome} />
-      <Route exact path="/patient/login/about" component = {PatientAbout} />
-      <Route exact path="/patient/login/gallery" component = {PatientGallery} />
-      <Route exact path="/patient/login/contact" component = {PatientContact} />
+   <Route exact path="/patient/login/patient_home" component = {PatientHome} />
+    <Route exact path="/patient/login/home" component = {PatHome} />
+    <Route exact path="/patient/login/about" component = {PatientAbout} />
+    <Route exact path="/patient/login/gallery" component = {PatientGallery} />
+    <Route exact path="/patient/login/contact" component = {PatientContact} />
 
-       <Route exact path="/doctors/login" component={DoctorLogin} />
-       
-           <Route exact path="/doctors/login/doctor_home" component = {Doctor} />
-       <Route exact path="/doctors/login/home" component = {DocHome} />
-      <Route exact path="/doctors/login/about" component = {DocAbout}/>
-       <Route exact path="/doctors/login/gallery" component = {DocGallery}/>
-       <Route exact path="/doctors/login/contact" component = {DocContact}/>
-
-     <Route exact path="/employee/login" component={EmployeeLogin} />
+     <Route exact path="/doctors/login" component={DoctorLogin} />
      
-       <Route exact path="/employee/login/employee_home" component = {Employee} />
-       <Route exact path="/employee/login/home" component = {EmpHome}/>
-       <Route exact path="/employee/login/about" component = {EmpAbout}/>
-       <Route exact path="/employee/login/gallery" component = {EmpGallery}/>
-       <Route exact path="/employee/login/contact" component = {EmpContact}/>
+         <Route exact path="/doctors/login/doctor_home" component = {Doctor} />
+     <Route exact path="/doctors/login/home" component = {DocHome} />
+    <Route exact path="/doctors/login/about" component = {DocAbout}/>
+     <Route exact path="/doctors/login/gallery" component = {DocGallery}/>
+     <Route exact path="/doctors/login/contact" component = {DocContact}/>
 
-      <Route exact path="/administrator/login" component={AdministratorLogin} />
+   <Route exact path="/employee/login" component={EmployeeLogin} />
+   
+     <Route exact path="/employee/login/employee_home" component = {Employee} />
+     <Route exact path="/employee/login/home" component = {EmpHome}/>
+     <Route exact path="/employee/login/about" component = {EmpAbout}/>
+     <Route exact path="/employee/login/gallery" component = {EmpGallery}/>
+     <Route exact path="/employee/login/contact" component = {EmpContact}/>
 
-      <Route exact path="/administrator/login/admin_home" component = {Admin} />
-      <Route exact path="/administrator/login/home" component = {AdHome}/>
-     <Route exact path="/administrator/login/about" component = {AdminAbout}/>
-     <Route exact path="/administrator/login/gallery" component = {AdminGallery}/>
-     <Route exact path="/administrator/login/contact" component = {AdminContact}/>
+    <Route exact path="/administrator/login" component={AdministratorLogin} />
 
-      <Route exact path="/contact" component={Contact} />
-      <Route exact path="/regPatient" component ={PatientReg}/>
-     </Router>
+    <Route exact path="/administrator/login/admin_home" component = {Admin} />
+    <Route exact path="/administrator/login/home" component = {AdHome}/>
+   <Route exact path="/administrator/login/about" component = {AdminAbout}/>
+   <Route exact path="/administrator/login/gallery" component = {AdminGallery}/>
+   <Route exact path="/administrator/login/contact" component = {AdminContact}/>
+
+    <Route exact path="/contact" component={Contact} />
+    <Route exact path="/regPatient" component ={PatientReg}/>
+   </Router>
+    
+        </Template>
       
 
 

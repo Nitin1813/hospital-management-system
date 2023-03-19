@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
 
 import "./btn.css";
@@ -10,7 +10,12 @@ import { FaHeartbeat } from 'react-icons/fa';
 import { ImEarth } from 'react-icons/im';
 import { FaHospitalUser } from 'react-icons/fa';
 import { MdAddIcCall } from 'react-icons/md';
+import PatientLogin from '../Login/PatientLogin'
+import Home from "../Home/Home";
+
 function SizesExample() {
+  const [login, setLogin] = useState(false);
+  
 //  function setButton() {
 //     console.log("goToDashboard")
 //     constructor() {
@@ -45,8 +50,8 @@ function SizesExample() {
   return (
     <div>
       <div className="buttons">
-        <Button  size="lg"  >
-        <BsFileEarmarkTextFill/> Lab Report
+        <Button  size="lg" onClick={()=>setLogin(true) } >
+        <BsFileEarmarkTextFill/> Lab Report{login ? <PatientLogin /> : null}
         </Button>{' '}
         <Button  size="lg">
           <FaHeartbeat/> Health Checkup
